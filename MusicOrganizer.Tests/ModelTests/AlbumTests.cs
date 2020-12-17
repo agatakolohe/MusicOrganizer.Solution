@@ -68,8 +68,20 @@ namespace MusicOrganizer.Tests
             Assert.AreEqual(newAlbum02, result);
         }
 
+        [TestMethod]
+        public void AddArtist_AssociatesArtistWithAlbum_ArtistList()
+        {
+            string newArtistName01 = "Led Zeppelin";
+            Artist newArtist01 = new Artist(newArtistName01);
+            List<Artist> newArtistList = new List<Artist> { newArtist01 };
+            string albumName = "Houses of Holy";
+            Album newAlbum = new Album(albumName);
+            newAlbum.AddArtist(newArtist01);
 
+            List<Artist> result = newAlbum.Artists;
 
+            CollectionAssert.AreEqual(newArtistList, result);
+        }
 
     }
 }
