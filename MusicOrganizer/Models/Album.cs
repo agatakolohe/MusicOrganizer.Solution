@@ -4,6 +4,17 @@ namespace MusicOrganizer.Models
 {
     public class Album
     {
-        //public string getter and setters
+        //private static List<Album> _instances = new List<Album> { };
+        public string AlbumName { get; set; }
+        //public int Id { get; set; }
+        //public List<Artist> Artists { get; set; }
+
+        public Album(string albumName)
+        {
+            AlbumName = albumName;
+
+        }
+
+
     }
 }

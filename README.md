@@ -4,7 +4,7 @@
 <img src="https://github.com/agatakolohe.png" width="200px" height="auto" >
 <img src="https://github.com/glenbuck503.png" width="200px" height="auto" >
 </div>
-<p align="center">Description of application, date-2020</p>
+<p align="center">Description of application, 12-17-2020</p>
 <p align="center"> By Agata Kolodziej & Glen Buck </p>
 
 ## Description

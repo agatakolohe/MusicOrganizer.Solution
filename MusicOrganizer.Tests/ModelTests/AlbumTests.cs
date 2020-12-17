@@ -1,24 +1,24 @@
-// using Microsoft.VisualStudio.TestTools.UnitTesting;
-// using MusicOrganizer.Models;
-// using System.Collections.Generic;
-// using System;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+using MusicOrganizer.Models;
+using System.Collections.Generic;
+using System;
 
-// namespace MusicOrganizer.Tests
-// {
-//     [TestClass]
-//     public class AlbumTests : IDisposable
-//     {
-//         public void Dispose()
-//         {
-//             Category.ClearAll();
-//         }
+namespace MusicOrganizer.Tests
+{
+    [TestClass]
+    public class AlbumTests //: IDisposable
+    {
+        // public void Dispose()
+        // {
+        //     Category.ClearAll();
+        // }
 
-//         [TestMethod]
-//         public void NameOfMethodWeAreTesting_DescriptionOfBehavior_ExpectedReturnValue()
-//         {
-//             Category newCategory = new Category("test category");
-//             Assert.AreEqual(EXPECTED RESULT, CODE TO TEST);
-//         }
+        [TestMethod]
+        public void AlbumConstructor_CreateInstanceOfAlbum_Album()
+        {
+            Album newAlbum = new Album("test album");
+            Assert.AreEqual(typeof(Album), newAlbum.GetType());
+        }
 
-//     }
-// }
+    }
+}
