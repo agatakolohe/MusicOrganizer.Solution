@@ -1,11 +1,11 @@
 using System.Collections.Generic;
 using System;
 using Microsoft.AspNetCore.Mvc;
-// using ProjectName.Models; <<change
+using MusicOrganizer.Models;
 
-namespace ProjectName.Controllers //change
+namespace MusicOrganizer.Controllers
 {
-    public class ClassNameController : Controller //change
+    public class ArtistsController : Controller
     {
         // [HttpGet("/ParentObject")] //Display list of all ParentObjects
         // public ActionResult Index()

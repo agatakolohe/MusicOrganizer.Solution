@@ -1,8 +1,8 @@
 using System.Collections.Generic;
 
-namespace ProjectName.Models
+namespace MusicOrganizer.Models
 {
-    public class ChildClassName
+    public class Album
     {
         //public string getter and setters
     }

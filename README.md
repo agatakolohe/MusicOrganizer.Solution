@@ -2,20 +2,31 @@
 
 <div align="center">
 <img src="https://github.com/agatakolohe.png" width="200px" height="auto" >
+<img src="https://github.com/glenbuck503.png" width="200px" height="auto" >
 </div>
 <p align="center">Description of application, date-2020</p>
-<p align="center"> By Agata Kolodziej</p>
+<p align="center"> By Agata Kolodziej & Glen Buck </p>
 
 ## Description
 
-Purpose usage, detailed explanation what is does and any other information you want users and other developers to have
+It is program for users to catalog and organize their music. This should be a Album collection.
+
+They should be able to create a new album, enter the album title, and list out all of their albums.
+Add a feature that allows users to add an artist to an album. Keep it simple - assume each is by a single artist.
+After that, let users list out all the artists and choose an artist to see which records are by that artist.
 
 ## Specifications
 
 <details>
   <summary>Expand Specs</summary>
 
-### Describe: functionName()
+### Describe: Artists()
+
+| Test                                                  | Expect                |
+| ----------------------------------------------------- | --------------------- |
+| It will create an Album object with the Name property | Artist(string Name) ; |
+
+### Describe: Albums()
 
 | Test | Expect |
 | ---- | ------ |
@@ -84,4 +95,4 @@ If any errors or bugs occur with installation delete both bin and obj folders an
 
 This software is licensed under the [MIT License](https://choosealicense.com/licenses/mit/).
 
-Copyright (c) 2020 Agata Kolodziej
+Copyright (c) 2020 Agata Kolodziej & Glen Buck

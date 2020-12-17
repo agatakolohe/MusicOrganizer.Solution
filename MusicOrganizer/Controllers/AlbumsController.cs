@@ -1,10 +1,10 @@
 using Microsoft.AspNetCore.Mvc;
-// using ProjectName.Models; <<change
+using MusicOrganizer.Models;
 using System.Collections.Generic;
 
-namespace ProjectName.Controllers//change
+namespace MusicOrganizer.Controllers
 {
-    public class ChildClassNameController : Controller
+    public class AlbumsController : Controller
     {
 
         // [HttpGet("/categories/{categoryId}/items/new")]//user creates the ChildObject example:Item in category. Category: Housework == Item:Mop the floors
