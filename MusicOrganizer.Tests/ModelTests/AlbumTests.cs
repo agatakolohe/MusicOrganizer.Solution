@@ -51,8 +51,25 @@ namespace MusicOrganizer.Tests
             List<Album> result = Album.GetAll();
 
             CollectionAssert.AreEqual(newList, result);
-
         }
+
+        [TestMethod]
+
+        public void Find_ReturnsCorrectAlbum_Album()
+        {
+            //Arrange
+            string albumName01 = "back in black";
+            string albumName02 = "house of holy";
+            Album newAlbum01 = new Album(albumName01);
+            Album newAlbum02 = new Album(albumName02);
+            //Act
+            Album result = Album.Find(1);
+            //Assert
+            Assert.AreEqual(newAlbum02, result);
+        }
+
+
+
 
     }
 }
