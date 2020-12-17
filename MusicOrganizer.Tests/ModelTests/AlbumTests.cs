@@ -35,7 +35,7 @@ namespace MusicOrganizer.Tests
             String albumName = "Test Alubm";
             Album newAlbum = new Album(albumName);
             int result = newAlbum.Id;
-            Assert.AreEqual(2, result);
+            Assert.AreEqual(1, result);
         }
 
 
