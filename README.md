@@ -22,9 +22,10 @@ After that, let users list out all the artists and choose an artist to see which
 
 ### Describe: Artists()
 
-| Test                                                  | Expect                |
-| ----------------------------------------------------- | --------------------- |
-| It will create an Album object with the Name property | Artist(string Name) ; |
+| Test                                                         | Expect                               |
+| ------------------------------------------------------------ | ------------------------------------ |
+| It will create an Album object with the Name and Id property | Artist(string Name, int Id) ;        |
+| It will create a list of Album objects                       | new List<Album>{ album01, album02 }; |
 
 ### Describe: Albums()
 

@@ -38,6 +38,23 @@ namespace MusicOrganizer.Tests
             Assert.AreEqual(1, result);
         }
 
+        [TestMethod]
+
+        public void GetAll_ReturnAllAlbums_AlbumList()
+        {
+            string albumName01 = "back in black";
+            string albumName02 = "houses of holy";
+            string albumName03 = "houses of holy";
+            Album newAlbum03 = new Album(albumName03);
+            Album newAlbum01 = new Album(albumName01);
+            Album newAlbum02 = new Album(albumName02);
+            List<Album> newList = new List<Album> { newAlbum01, newAlbum02 };
+
+            List<Album> result = Album.GetAll();
+
+            CollectionAssert.AreEqual(newList, result);
+
+        }
 
     }
 }
