@@ -22,7 +22,7 @@ namespace MusicOrganizer.Tests
         [TestMethod]
         public void GetAlbumName_ReturnAlbumName_String()
         {
-            string albumName = "test album";
+            string albumName = "albumName";
             Album newAlbum = new Album("albumName");
 
             string result = newAlbum.AlbumName;
