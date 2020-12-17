@@ -63,7 +63,7 @@ namespace MusicOrganizer.Tests
             Album newAlbum01 = new Album(albumName01);
             Album newAlbum02 = new Album(albumName02);
             //Act
-            Album result = Album.Find(1);
+            Album result = Album.Find(2);
             //Assert
             Assert.AreEqual(newAlbum02, result);
         }
