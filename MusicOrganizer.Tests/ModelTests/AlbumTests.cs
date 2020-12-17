@@ -6,12 +6,12 @@ using System;
 namespace MusicOrganizer.Tests
 {
     [TestClass]
-    public class AlbumTests //: IDisposable
+    public class AlbumTests : IDisposable
     {
-        // public void Dispose()
-        // {
-        //     Category.ClearAll();
-        // }
+        public void Dispose()
+        {
+            Album.ClearAll();
+        }
 
         [TestMethod]
         public void AlbumConstructor_CreateInstanceOfAlbum_Album()
@@ -23,12 +23,21 @@ namespace MusicOrganizer.Tests
         public void GetAlbumName_ReturnAlbumName_String()
         {
             string albumName = "albumName";
-            Album newAlbum = new Album("albumName");
+            Album newAlbum = new Album(albumName);
 
             string result = newAlbum.AlbumName;
 
             Assert.AreEqual(albumName, result);
         }
+        [TestMethod]
+        public void GetId_ReturnsAlbumId_Int()
+        {
+            String albumName = "Test Alubm";
+            Album newAlbum = new Album(albumName);
+            int result = newAlbum.Id;
+            Assert.AreEqual(2, result);
+        }
+
 
     }
 }
