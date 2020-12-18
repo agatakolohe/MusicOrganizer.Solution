@@ -1,12 +1,16 @@
-@* @{
-  Layout = "_Layout";
-  }
-  <h1>Add a new item to @Model.Name</h1>
+@{
+    Layout = "_Layout";
+}
 
-  <form action="/categories/@Model.Id/items" method="post">
-  <input id="categoryId" name="categoryId" type="hidden" value="@Model.Id">
-  <label for="itemDescription">Item Description</label>
-  <input id="itemDescription" name="itemDescription" type="text">
-  <button type='submit'>Add Item</button>
-  </form> *@
-  @* form to create new childclass instance *@
+<h1>Add an album</h1>
+<p>Add an album here:</p>
+
+<form action="/albums" method="post">
+    <label for="albumName">Album name</label>
+    <input id="albumName" name="albumName" type="text">
+    <button type="submit">Add</button>
+</form>
+
+<p><a href="/">Back home</a></p>
+<p><a href="/album">Back to albums.</a></p>
+@* form to create new parentobject *@

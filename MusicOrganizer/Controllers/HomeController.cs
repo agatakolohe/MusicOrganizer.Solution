@@ -1,16 +1,16 @@
 using Microsoft.AspNetCore.Mvc;
-// using ProjectName.Models; <<change
+using MusicOrganizer.Models;
 using System.Collections.Generic;
 
-namespace ProjectName.Controllers //change
+namespace MusicOrganizer.Controllers
 {
-    public class HomeController : Controller //main page/splash page
+    public class HomeController : Controller
     {
-        // [Route("/")] show the main welcome page
-        // public ActionResult Index()
-        // {
-        //     return View();
-        // }
+        [Route("/")]
+        public ActionResult Index()
+        {
+            return View();
+        }
 
         // [Route("/favorite_photos")] //route to pictures
         // public ActionResult FavoritePhotos()

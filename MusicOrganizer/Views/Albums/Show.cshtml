@@ -1,11 +1,19 @@
-@* @{
+@using MusicOrganizer.Models;
+
+  @{
   Layout = "_Layout";
   }
-  <h1>To Do List Item Details:</h1>
 
-  <h2>@Model["item"].Description</h2>
-  <h3>Category: @Model["category"].Name</h3>
+  <h3>Here are all the Artists in this Album:</h3>
 
-  <a href='/categories/@Model["category"].Id/items/new'>Add another item</a>
-  <a href='/categories'>View All categories</a> *@
-@* showing the details of the child class instance *@
+  <ol>
+  @foreach (Artist artist in @Model["artist"])
+  {
+  <li><a href='/albums/@Model["album"].Id/artists/@artist.Id'>@artist.ArtistName</a></li>
+  }
+  </ol>
+
+  <p><a href='/albums/@Model["album"].Id/artist/new'>Add a new artist</a></p>
+  <p><a href='/albums'>Return to album list</a></p>
+  <p><a href='/'>Return to Main Page</a></p>
+

@@ -1,19 +1,10 @@
-@* @using ProjectName.Models;
-  @{
-  Layout = "_Layout";
-  }
+@{
+    Layout = "_Layout";
+}
+<h1>Album List Artist Details:</h1>
 
-  <h3>Here are all the items in this category:</h3>//child of parent
+<h2>@Model["artist"].Description</h2>
+<h3>Album: @Model["album"].Name</h3>
 
-  <ol>
-  @foreach (Item item in @Model["items"])
-  {
-  <li><a href='/categories/@Model["category"].Id/items/@item.Id'>@item.Description</a></li>
-  }
-  </ol>
-
-  <p><a href='/categories/@Model["category"].Id/items/new'>Add a new item</a></p>
-  <p><a href='/categories'>Return to category list</a></p>
-  <p><a href='/'>Return to Main Page</a></p> *@
-
-  @* show all categories  *@
+<a href='/albums/@Model["album"].Id/artists/new'>Add another artist</a>
+<a href='/albums'>View All albums</a>
