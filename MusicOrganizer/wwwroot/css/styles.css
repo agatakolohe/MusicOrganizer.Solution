@@ -1,0 +1,16 @@
+body {
+  background: darkcyan;
+  color: red;
+}
+h1 {
+  color: red;
+}
+div#footer {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  color: orange;
+  background: purple;
+  padding: 8px;
+}
